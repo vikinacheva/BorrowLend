@@ -23,13 +23,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Item" asp-action="Index">Item</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Item" asp-action="Index">Items</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Expense" asp-action="Index">Expense</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Expense" asp-action="Index">Expenses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Expense Type" asp-action="Index">Expense Type</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ExpenseType" asp-action="Index">Expense Type</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"></a>
                         </li>
                     </ul>
                 </div>
@@ -43,6 +46,9 @@
     </div>
 
     <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - BorrowLend - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

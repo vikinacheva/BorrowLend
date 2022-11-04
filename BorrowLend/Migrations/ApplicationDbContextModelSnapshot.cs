@@ -43,7 +43,7 @@ namespace BorrowLend.Migrations
 
                     b.HasIndex("ExpenseTypeId");
 
-                    b.ToTable("Expenses");
+                    b.ToTable("Expenses", (string)null);
                 });
 
             modelBuilder.Entity("BorrowLend.Models.ExpenseType", b =>
@@ -60,7 +60,7 @@ namespace BorrowLend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ExpenseTypes");
+                    b.ToTable("ExpenseTypes", (string)null);
                 });
 
             modelBuilder.Entity("BorrowLend.Models.Item", b =>
@@ -85,7 +85,7 @@ namespace BorrowLend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Items");
+                    b.ToTable("Items", (string)null);
                 });
 
             modelBuilder.Entity("BorrowLend.Models.Expense", b =>

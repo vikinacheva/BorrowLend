@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MessagePack;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using KeyAttribute = System.ComponentModel.DataAnnotations.KeyAttribute;
 
 namespace BorrowLend.Models
 {
@@ -9,6 +11,6 @@ namespace BorrowLend.Models
         public int Id { get; set; }
         [Required]
         [Display(Name = "Expense Name")]
-        public string ExpenseTypeName { get; set; }
+        public string? ExpenseTypeName { get; set; }
     }
 }

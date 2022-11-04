@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BorrowLend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221014064737_BorrowLend2")]
+    [Migration("20221021053723_BorrowLend2")]
     partial class BorrowLend2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

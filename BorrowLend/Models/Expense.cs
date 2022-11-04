@@ -9,12 +9,12 @@ namespace BorrowLend.Models
         public int Id { get; set; }
         [Required]
         [Display(Name = "Expense Name")]
-        public string ExpenseName { get; set; }
+        public string? ExpenseName { get; set; }
         [Required]
-        [Range(1, double.MaxValue, ErrorMessage = "")]
+        [Range(1, double.MaxValue, ErrorMessage = "The amount must be positive number!")]
         public double ExpenseAmount { get; set; }
         public int ExpenseTypeId { get; set; }
         [ForeignKey("ExpenseTypeId")]
-        public virtual ExpenseType ExpenseType { get; set; }
+        public virtual ExpenseType? ExpenseType { get; set; }
     }
 }
